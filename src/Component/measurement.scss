@@ -1,0 +1,51 @@
+h1{
+  color: rgb(57, 136, 136);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+justify-content: flex-start;
+text-align: left;
+box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.39);
+background-color: white;
+padding: 10px;
+
+input{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+  .container_item.size{
+    input{
+      width: 50px;
+    }
+  
+  }
+.button.remove{
+  background-color: red;
+  height: 30px;
+  width:30px;
+}
+  button{
+    border: none;
+    background: rgb(165, 165, 223);
+    color: white;
+    font-weight: bold;
+    border-radius: 10%;
+    padding: 8px 10px;
+  
+    border: 2px solid rgb(255, 255, 255);
+    margin:5px;
+  
+  }
+}
+
+.recipe{
+  span{
+    margin-left:10px
+  }
+}
