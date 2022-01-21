@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Simple-Convertor/static/css/main.073c9b0a.css",
+    "main.js": "/Simple-Convertor/static/js/main.79557fdf.js",
+    "static/js/787.408e6407.chunk.js": "/Simple-Convertor/static/js/787.408e6407.chunk.js",
+    "index.html": "/Simple-Convertor/index.html",
+    "main.073c9b0a.css.map": "/Simple-Convertor/static/css/main.073c9b0a.css.map",
+    "main.79557fdf.js.map": "/Simple-Convertor/static/js/main.79557fdf.js.map",
+    "787.408e6407.chunk.js.map": "/Simple-Convertor/static/js/787.408e6407.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.79557fdf.js"
+  ]
+}
