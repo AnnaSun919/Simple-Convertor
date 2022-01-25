@@ -1,3 +1,5 @@
+
+
 h1{
   color: rgb(57, 136, 136);
 }
@@ -6,36 +8,58 @@ h1{
   display: flex;
   flex-direction: column;
 
-  width: 50vw;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
 justify-content: flex-start;
 text-align: left;
 box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.39);
 background-color: white;
-padding: 10px;
+padding: 20px;
+border-radius: 10px;
+
+.form-inline{
+  background-color: rgb(146, 166, 219);
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  width: auto;
+
+
+
+
+}
+
 
 input{
-  margin-left: 10px;
-  margin-top: 10px;
+  margin:0 10px 0 10px;
+  width: 35vw;
+
+
 }
   .container_item.size{
     input{
       width: 50px;
     }
+
+    
   
   }
-.button.remove{
+
+#button_remove{
   background-color: red;
-  height: 30px;
-  width:30px;
+  height: 20px;
+  width:20px;
+  // align-self: center;
+  // border: none;
 }
-  button{
+  .button{
     border: none;
     background: rgb(165, 165, 223);
     color: white;
     font-weight: bold;
-    border-radius: 10%;
+    border-radius: 10px;
     padding: 8px 10px;
   
     border: 2px solid rgb(255, 255, 255);
@@ -45,7 +69,15 @@ input{
 }
 
 .recipe{
+
+
+  padding :20px;
+
+  .ingredient{
+
+  }
   span{
-    margin-left:10px
+  margin-left: 5px;
+
   }
 }

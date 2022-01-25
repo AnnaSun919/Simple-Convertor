@@ -24,6 +24,7 @@ function Measurement() {
   };
 
   let handleSubmit = (event) => {
+    console.log("works");
     event.preventDefault();
     setrecipe([]);
     const {
@@ -52,6 +53,7 @@ function Measurement() {
     }
   };
 
+  console.log(recipe.length > 0);
   return (
     <>
       <h1>Convertor</h1>
@@ -70,29 +72,33 @@ function Measurement() {
           {formValues.map((element, index) => (
             <div className="container_item">
               <div className="form-inline" key={index}>
-                <label>Ingredient</label>
-                <input
-                  type="text"
-                  name="ingredient"
-                  value={element.ingredient || ""}
-                  onChange={(e) => handleChange(index, e)}
-                />
-                <label>Quantity</label>
-                <input
-                  type="text"
-                  name="quantity"
-                  value={element.quantity || ""}
-                  onChange={(e) => handleChange(index, e)}
-                />
-                {index ? (
-                  <button
-                    type="button"
-                    className="button remove"
-                    onClick={() => removeFormFields(index)}
-                  >
-                    -
-                  </button>
-                ) : null}
+                <div className="form_elem">
+                  <label>Ingredient</label>
+                  <input
+                    type="text"
+                    name="ingredient"
+                    value={element.ingredient || ""}
+                    onChange={(e) => handleChange(index, e)}
+                  />
+                </div>
+                <div className="form_elem">
+                  <label>Quantity</label>
+                  <input
+                    type="text"
+                    name="quantity"
+                    value={element.quantity || ""}
+                    onChange={(e) => handleChange(index, e)}
+                  />
+                  {index ? (
+                    <button
+                      type="button"
+                      id="button_remove"
+                      onClick={() => removeFormFields(index)}
+                    >
+                      -
+                    </button>
+                  ) : null}
+                </div>
               </div>
             </div>
           ))}
@@ -103,7 +109,7 @@ function Measurement() {
               type="button"
               onClick={() => addFormFields()}
             >
-              Add
+              Add Ingredient
             </button>
             <button className="button submit" type="submit">
               Submit
@@ -111,15 +117,21 @@ function Measurement() {
           </div>
         </div>
       </form>
-      {recipe &&
-        recipe.map((elem) => (
-          <div className="recipe">
+
+      <div className="recipe">
+        {recipe.length > 0 && (
+          <div className="container">
             <h1>New Measurement</h1>
             <h2>Ingredient :</h2>
-            <span>{elem.ingredient}</span>
-            <span>{elem.quantity}</span>g
+            {recipe.map((elem) => (
+              <div className="ingredient">
+                <span>{elem.ingredient}</span>
+                <span>{elem.quantity}</span>
+              </div>
+            ))}
           </div>
-        ))}
+        )}
+      </div>
     </>
   );
 }

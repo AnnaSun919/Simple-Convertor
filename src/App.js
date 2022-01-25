@@ -1,6 +1,5 @@
-import "./App.css";
 import Measurement from "./Component/measurement";
-import "./docs/measurement.css";
+import "./docs/App.css";
 
 function App() {
   return (

@@ -1,0 +1,23 @@
+@include media-md {
+.container{
+ width: 50vw;
+
+ .form-inline{
+   display: flex;
+   flex-direction: row;
+  background-color: rgb(138, 167, 245);
+  align-items: center;
+  border-radius: 10px;
+  padding:10px;
+
+input{
+  margin:0 10px 0 10px;
+  width: 10vw;
+
+
+}
+}
+}
+
+  
+}

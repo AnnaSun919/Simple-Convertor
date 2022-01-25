@@ -1,0 +1,104 @@
+h1 {
+  color: #398888;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+  -webkit-box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.39);
+          box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.39);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container .form-inline {
+  background-color: #92a6db;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  width: auto;
+}
+
+.container input {
+  margin: 0 10px 0 10px;
+  width: 35vw;
+}
+
+.container .container_item.size input {
+  width: 50px;
+}
+
+.container #button_remove {
+  background-color: red;
+  height: 20px;
+  width: 20px;
+}
+
+.container .button {
+  border: none;
+  background: #a5a5df;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 8px 10px;
+  border: 2px solid white;
+  margin: 5px;
+}
+
+.recipe {
+  padding: 20px;
+}
+
+.recipe span {
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    width: 50vw;
+  }
+  .container .form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #8aa7f5;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .container .form-inline input {
+    margin: 0 10px 0 10px;
+    width: 10vw;
+  }
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+.App {
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */
